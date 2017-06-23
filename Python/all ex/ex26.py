@@ -1,3 +1,4 @@
+import ex25
 
 def break_words(stuff):
     """This function will break up words for us."""
@@ -69,10 +70,10 @@ jelly_beans, jars, crates = secret_formula(start_point)
 print("With a starting point of: {}" .format(start_point))
 print("We'd have {} jeans, {} jars, and {} crates." .format(jelly_beans, jars, crates))
 
-start_point = start_point / 10
+start = start_point / 10
 
 print("We can also do that this way:")
-print("We'd have {} beans, {} jars, and {} crabapples." .format(secret_formula(start_point))
+print("We'd have {} beans, {} jars, and {} crabapples." .format(*secret_formula(start)))
 
 
 sentence = "All god\tthings come to those who weight."
@@ -87,7 +88,7 @@ print_last_word(sorted_words)
 sorted_words = ex25.sort_sentence(sentence)
 print(sorted_words)
 
-print_irst_and_last(sentence)
+print_first_and_last(sentence)
 
-print_first_a_last_sorted(sentence)
+print_first_and_last_sorted(sentence)
 
