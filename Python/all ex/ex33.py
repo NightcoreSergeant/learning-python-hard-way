@@ -17,3 +17,13 @@ for num in mylist:
 
 
 whileloop(100, 1)
+
+mylist1 = []
+
+def forloop(a, x, c):
+    for i in range(a, x, c):
+        print("this is i now: {}" .format(i))
+        mylist1.append(i)
+        print("mylist1=", mylist1)
+
+forloop(0, 102, 2)
