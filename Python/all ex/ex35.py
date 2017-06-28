@@ -1,9 +1,9 @@
 from sys import exit
 
-def gold_room:
+def gold_room():
     print("This room is full of gold. How much do you take?")
 
-    next = int(input("> "))
+    next = input("> ")
     if "0" in next or "1" in next:
         how_much = int(next)
     else:
@@ -29,7 +29,7 @@ def bear_room():
     while True:
         next = input("> ")
         
-        if next == "take honey"
+        if next == "take honey":
             dead("The bear looks at you then slaps your face off.")
         elif next == "taunt bear" and not bear_moved:
             print("The bear has been moved")
@@ -55,7 +55,7 @@ def cthulhu_room():
     else:
         cthulhu_room()
 
-def dead(why)
+def dead(why):
     print(why, "Good job")
     exit(0)
 
@@ -70,7 +70,7 @@ def start():
 
     if next == "left":
         bear_room()
-    elif next == "right"
+    elif next == "right":
         cthulhu_room()
     else:
         dead("You stumble around the room until you starve.")
